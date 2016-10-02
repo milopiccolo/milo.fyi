@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var port = (process.argv.length >= 2 ? process.argv[2] : 80);
+var port = (process.argv.length >= 3 ? process.argv[2] : 80);
 console.log(port);
 
 app.get('/', function(req, res) {
