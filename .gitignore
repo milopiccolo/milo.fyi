@@ -35,3 +35,9 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+# Static distribution (my personal files) 
+dist
+
+# Files we're working on for Hamming checker
+tmp

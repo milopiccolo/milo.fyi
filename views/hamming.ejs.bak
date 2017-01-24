@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Milo's Hamming Distance Checker</title>
+  <!-- put a stylesheet here -->
+</head>
+<body>
+  <form method="post" name="myform">
+    <div>
+      <label for="data"> Enter permutation array here:</label><br>
+      <textarea rows=40 cols=40 id="data" name="data"></textarea>
+    </div>
+    <div>
+      <button id="calculate">Calculate Hamming Distance</button>
+    </div>
+  </form>
+  <div id="output">
+    hi
+  </div>
+
+  <script>
+    $("#calculate").click(function() {
+      $("#output").text("");
+    }
+  </script>
+
+</body>
+</html>

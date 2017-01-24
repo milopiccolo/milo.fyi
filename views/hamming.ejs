@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>Milo's Hamming Distance Checker</title>
+  <!-- put a stylesheet here -->
+</head>
+<body>
+  <form method="post" name="myform">
+    <div>
+      <label for="data"> Enter permutation array here:</label><br>
+      <textarea rows=40 cols=40 id="data" name="data"></textarea>
+    </div>
+    <div>
+      <button>Calculate Hamming Distance</button>
+    </div>
+  </form>
+  <% if(locals.escapedoutput) { %>
+    <div>
+      <%- locals.escapedoutput %>
+    </div>
+  <% } %>
+</body>
+</html>
