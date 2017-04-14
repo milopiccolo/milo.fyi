@@ -40,9 +40,6 @@ var upload = multer({
 
 app.use('/hamming', upload.any());
 app.post('/hamming', function(req, res) {
-
-  console.log(req.body);
-
   var filename;
   
   var out = '';
@@ -50,10 +47,11 @@ app.post('/hamming', function(req, res) {
     filename = 'tmp/'+runid;
     fs.writeFile(filename, req.body.text);
     runid++;
+    out += "Reading from text field...\n\n"
   }
   else {
     filename = req.files[0].path;
-    out += "Reading from file...\n"
+    out += "Reading from file...\n\n"
   }
   var command = __dirname+'/progs/hamming ' + filename;
   if(req.body.maxhd) {
